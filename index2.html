@@ -6,7 +6,11 @@
 		border: 1px solid black;
 		border-collapse: collapse;
 		padding-left: 5px;
-		padding-right: 50px;
+		padding-right: 20px;
+		font-size: 14px;
+	}
+	html {
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	</style>
 </head>
@@ -15,9 +19,153 @@
 <h3>Opcode AVR</h3>
 
 <table>
-<thead><td>№</td><td>4bit</td><td>4bit</td><td>4bit</td><td>4bit</td><td></td></thead>
+<thead><td>Mnemonics</td><td>Operands</td><td>Description</td><td>Operation</td><td>Flags</td><td>Clocks</td></thead>
 <tbody>
-<tr><td>Арифметические опкоды</td><td>0000</td><td>0000</td><td>0000</td><td>0000</td><td>NOP</td></tr>
+<tr><td colspan="6" style="padding-left: 10px;"><i>I. ARITHMETIC AND LOGIC INSTRUCTIONS</i></td></tr>
+<tr><td><b>ADD</b></td><td>Rd, Rr</td><td><b>Add</b> two Register</td><td>Rd = Rd + Rr</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td><b>ADC</b></td><td>Rd, Rr</td><td><b>Ad</b>d with <b>C</b>arry two Registers</td><td>Rd = Rd + Rr + C</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td><b>ADIW</b></td><td>Rdl, K</td><td><b>Ad</b>d <b>I</b>mmediate to <b>W</b>ord</td><td>Rdh:Rdl = Rdh:Rdl + K</td><td>Z, C, N, V, S</td><td>2</td></tr>
+<tr><td>SUB</td><td>Rd, Rr</td><td>Subtract two Registers</td><td>Rd <- Rd - Rr</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td>SUBI</td><td>Rd, K</td><td>Subtract Constant from Register</td><td>Rd <- Rd - K</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td>SBC</td><td>Rd, Rr</td><td>Subtract with Carry two Registers</td><td>Rd <- Rd - Rr - C</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td>SBCI</td><td>Rd, K</td><td>Subtract with Carry Constant from Reg.</td><td>Rd <- Rd - K - C</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td>SBIW</td><td>Rdl, K</td><td>Subtract Immediate from Word</td><td>Rdh:Rdl <- Rdh:Rdl - K</td><td>Z, C, N, V, S</td><td>2</td></tr>
+<tr><td>AND</td><td>Rd, Rr</td><td>Logical AND Registers</td><td>Rd <- Rd and Rr</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>ANDI</td><td>Rd, K</td><td>Logical AND Register and Constant</td><td>Rd <- Rd and K</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>OR</td><td>Rd, Rr</td><td>Logical OR Registers</td><td>Rd = Rd or Rr</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>ORI</td><td>Rd, K</td><td>Logical OR Register and Constant</td><td>Rd = Rd or Rr</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>EOR</td><td>Rd, Rr</td><td>Exclusive OR Registers</td><td>Rd = Rd xor Rr</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>COM</td><td>Rd</td><td>One’s Complement</td><td>Rd = 0xFF - Rd</td><td>Z, C, N, V</td><td>1</td></tr>
+<tr><td>NEG</td><td>Rd</td><td>Two’s Complement</td><td>Rd = 0x00 - Rd</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td>SBR</td><td>Rd, K</td><td>Set Bit(s) in Register</td><td>Rd = Rd v K</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>CBR</td><td>Rd, K</td><td>Clear Bit(s) in Register</td><td>Rd = Rd  (0xFF - K)</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>INC</td><td>Rd</td><td>Increment</td><td>Rd = Rd + 1</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>DEC</td><td>Rd</td><td>Decrement</td><td>Rd = Rd - 1</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>TST</td><td>Rd</td><td>Test for Zero or Minus</td><td>Rd = Rd xor Rd</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>CLR</td><td>Rd</td><td>Clear Register</td><td>Rd = Rd xor Rd</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td>SER</td><td>Rd</td><td>Set Register</td><td>Rd = 0xFF</td><td>None</td><td>1</td></tr>
+<tr><td>MUL</td><td>Rd, Rr</td><td>Multiply Unsigned</td><td>R1:R0 = Rd x Rr</td><td>Z, C</td><td>2</td></tr>
+<tr><td>MULS</td><td>Rd, Rr</td><td>Multiply Signed</td><td>R1:R0 = Rd x Rr</td><td>Z, C</td><td>2</td></tr>
+<tr><td>MULSU</td><td>Rd, Rr</td><td>Multiply Signed with Unsigned</td><td>R1:R0 = Rd x Rr</td><td>Z, C</td><td>2</td></tr>
+<tr><td>FMUL</td><td>Rd, Rr</td><td>Fractional Multiply Unsigned</td><td>R1:R0 = (Rd x Rr) << 1</td><td>Z, C</td><td>2</td></tr>
+<tr><td>FMULS</td><td>Rd, Rr</td><td>Fractional Multiply Signed</td><td>R1:R0 = (Rd x Rr) << 1</td><td>Z, C</td><td>2</td></tr>
+<tr><td>FMULSU</td><td>Rd, Rr</td><td>Fractional Multiply Signed with Unsigned</td><td>R1:R0 = (Rd x Rr) << 1</td><td>Z, C</td><td>2</td></tr>
+
+<tr><td colspan="6" style="padding-left: 10px;"><i>II. BRANCH INSTRUCTIONS</i></td></tr>
+<tr><td>RJMP</td><td>k</td><td>Relative Jump</td><td>PC = PC + k + 1</td><td>None</td><td>2</td></tr>
+<tr><td>IJMP</td><td></td><td>Indirect Jump to (Z)</td><td>PC = Z</td><td>None</td><td>2</td></tr>
+<tr><td>EIJMP</td><td></td><td>Extended Indirect Jump to (Z)</td><td>PC =(EIND:Z)</td><td>None</td><td>2</td></tr>
+<tr><td>JMP</td><td>k</td><td>Direct Jump</td><td>PC = k</td><td>None</td><td>3</td></tr>
+<tr><td>RCALL</td><td>k</td><td>Relative Subroutine Call</td><td>PC = PC + k + 1</td><td>None</td><td>4</td></tr>
+<tr><td>ICALL</td><td></td><td>Indirect Call to (Z)</td><td>PC = Z</td><td>None</td><td>4</td></tr>
+<tr><td>EICALL</td><td></td><td>Extended Indirect Call to (Z)</td><td>PC =(EIND:Z)</td><td>None</td><td>4</td></tr>
+<tr><td>CALL</td><td>k</td><td>Direct Subroutine Call</td><td>PC = k</td><td>None</td><td>5</td></tr>
+<tr><td>RET</td><td></td><td>Subroutine Return</td><td>PC = STACK</td><td>None</td><td>5</td></tr>
+<tr><td>RETI</td><td></td><td>Interrupt Return</td><td>I</td><td>None</td><td>5</td></tr>
+<tr><td>CPSE</td><td>Rd, Rr</td><td>Compare, Skip if Equal</td><td>if (Rd = Rr) PC =  PC + 2 or 3</td><td>None</td><td>1/2/3</td></tr>
+<tr><td>CP</td><td>Rd, Rr</td><td>Compare</td><td>Rd - Rr</td><td>Z, N, V, C, H</td><td>1</td></tr>
+<tr><td>CPC</td><td>Rd, Rr</td><td>Compare with Carry</td><td>Rd - Rr - C</td><td>Z, N, V, C, H</td><td>1</td></tr>
+<tr><td>CPI</td><td>Rd, K</td><td>Compare Register with Immediate</td><td>Rd - K</td><td>Z, N, V, C, H</td><td>1</td></tr>
+<tr><td>SBRC</td><td>Rr, b</td><td>Skip if Bit in Register Cleared</td><td>if (Rr(b)=0) PC = PC + 2 or 3</td><td>None</td><td>1/2/3</td></tr>
+<tr><td>SBRS</td><td>Rr, b</td><td>Skip if Bit in Register is Set</td><td>if (Rr(b)=1) PC = PC + 2 or 3</td><td>None</td><td>1/2/3</td></tr>
+<tr><td>SBIC</td><td>P, b</td><td>Skip if Bit in I/O Register Cleared</td><td>if (P(b)=0) PC = PC + 2 or 3</td><td>None</td><td>1/2/3</td></tr>
+<tr><td>SBIS</td><td>P, b</td><td>Skip if Bit in I/O Register is Set</td><td>if (P(b)=1) PC = PC + 2 or 3</td><td>None</td><td>1/2/3</td></tr>
+<tr><td>BRBS</td><td>s, k</td><td>Branch if Status Flag Set</td><td>if (SREG(s) = 1) then PC = PC+k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRBC</td><td>s, k</td><td>Branch if Status Flag Cleared</td><td>if (SREG(s) = 0) then PC=PC+k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BREQ</td><td>k</td><td>Branch if Equal</td><td>if (Z = 1) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRNE</td><td>k</td><td>Branch if Not Equal</td><td>if (Z = 0) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRCS</td><td>k</td><td>Branch if Carry Set</td><td>if (C = 1) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRCC</td><td>k</td><td>Branch if Carry Cleared</td><td>if (C = 0) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRSH</td><td>k</td><td>Branch if Same or Higher</td><td>if (C = 0) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRLO</td><td>k</td><td>Branch if Lower</td><td>if (C = 1) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRMI</td><td>k</td><td>Branch if Minus</td><td>if (N = 1) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRPL</td><td>k</td><td>Branch if Plus</td><td>if (N = 0) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRGE</td><td>k</td><td>Branch if Greater or Equal, Signed</td><td>if (N  V= 0) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRLT</td><td>k</td><td>Branch if Less Than Zero, Signed</td><td>if (N  V= 1) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRHS</td><td>k</td><td>Branch if Half Carry Flag Set</td><td>if (H = 1) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRHC</td><td>k</td><td>Branch if Half Carry Flag Cleared</td><td>if (H = 0) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRTS</td><td>k</td><td>Branch if T Flag Set</td><td>if (T = 1) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRTC</td><td>k</td><td>Branch if T Flag Cleared</td><td>if (T = 0) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRVS</td><td>k</td><td>Branch if Overflow Flag is Set</td><td>if (V = 1) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRVC</td><td>k</td><td>Branch if Overflow Flag is Cleared</td><td>if (V = 0) then PC  PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRIE</td><td>k</td><td>Branch if Interrupt Enabled</td><td>if ( I = 1) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+<tr><td>BRID</td><td>k</td><td>Branch if Interrupt Disabled</td><td>if ( I = 0) then PC = PC + k + 1</td><td>None</td><td>1/2</td></tr>
+
+<tr><td colspan="6" style="padding-left: 10px;"><i>III. BIT AND BIT-TEST INSTRUCTIONS</i></td></tr>
+<tr><td>SBI</td><td>P, b</td><td>Set Bit in I/O Register</td><td>I/O(P,b) = 1</td><td>None</td><td>2</td></tr>
+<tr><td>CBI</td><td>P, b</td><td>Clear Bit in I/O Register</td><td>I/O(P,b) = 0</td><td>None</td><td>2</td></tr>
+<tr><td>LSL</td><td>Rd</td><td>Logical Shift Left</td><td>Rd(n+1) = Rd(n), Rd(0) = 0</td><td>None</td><td>2</td></tr>
+<tr><td>LSR</td><td>Rd</td><td>Logical Shift Right</td><td>Rd(n) = Rd(n+1), Rd(7) = 0</td><td>Z, C, N, V</td><td>1</td></tr>
+<tr><td>ROL</td><td>Rd</td><td>Rotate Left Through Carry</td><td>Rd(0)=C,Rd(n+1)= Rd(n),C=Rd(7)</td><td>Z, C, N, V</td><td>1</td></tr>
+<tr><td>ROR</td><td>Rd</td><td>Rotate Right Through Carry</td><td>Rd(7)=C,Rd(n)= Rd(n+1),C=Rd(0)</td><td>Z, C, N, V</td><td>1</td></tr>
+<tr><td>ASR</td><td>Rd</td><td>Arithmetic Shift Right</td><td>Rd(n) = Rd(n+1), n=0..6</td><td>Z, C, N, V</td><td>1</td></tr>
+<tr><td>SWAP</td><td>Rd</td><td>Swap Nibbles</td><td>Rd(3..0)=Rd(7..4),Rd(7..4)=Rd(3..0)</td><td>None</td><td>1</td></tr>
+<tr><td>BSET</td><td>s</td><td>Flag Set</td><td>SREG(s) = 1</td><td>SREG(s)</td><td>1</td></tr>
+<tr><td>BCLR</td><td>s</td><td>Flag Clear</td><td>SREG(s) = 0</td><td>SREG(s)</td><td>1</td></tr>
+<tr><td>BST</td><td>Rr, b</td><td>Bit Store from Register to T</td><td>T = Rr(b)</td><td>T</td><td>1</td></tr>
+<tr><td>BLD</td><td>Rd, b</td><td>Bit load from T to Register</td><td>Rd(b) = T</td><td>None</td><td>1</td></tr>
+<tr><td>SEC</td><td></td><td>Set Carry</td><td>C = 1</td><td>C</td><td>1</td></tr>
+<tr><td>CLC</td><td></td><td>Clear Carry</td><td>C = 0</td><td>C</td><td>1</td></tr>
+<tr><td>SEN</td><td></td><td>Set Negative Flag</td><td>N = 1</td><td>N</td><td>1</td></tr>
+<tr><td>CLN</td><td></td><td>Clear Negative Flag</td><td>N = 0</td><td>N</td><td>1</td></tr>
+<tr><td>SEZ</td><td></td><td>Set Zero Flag</td><td>Z = 1</td><td>Z</td><td>1</td></tr>
+<tr><td>CLZ</td><td></td><td>Clear Zero Flag</td><td>Z = 0</td><td>Z</td><td>1</td></tr>
+<tr><td>SEI</td><td></td><td>Global Interrupt Enable</td><td>I = 1</td><td>I</td><td>1</td></tr>
+<tr><td>CLI</td><td></td><td>Global Interrupt Disable</td><td>I = 0</td><td>I</td><td>1</td></tr>
+<tr><td>SES</td><td></td><td>Set Signed Test Flag</td><td>S = 1</td><td>S</td><td>1</td></tr>
+<tr><td>CLS</td><td></td><td>Clear Signed Test Flag</td><td>S = 0</td><td>S</td><td>1</td></tr>
+<tr><td>SEV</td><td></td><td>Set Twos Complement Overflow</td><td>V = 1</td><td>V</td><td>1</td></tr>
+<tr><td>CLV</td><td></td><td>Clear Twos Complement Overflow</td><td>V = 0</td><td>V</td><td>1</td></tr>
+<tr><td>SET</td><td></td><td>Set T in SREG</td><td>T = 1</td><td>T</td><td>1</td></tr>
+<tr><td>CLT</td><td></td><td>Clear T in SREG</td><td>T = 0</td><td>T</td><td>1</td></tr>
+<tr><td>SEH</td><td></td><td>Set Half Carry Flag in SREG</td><td>H = 1</td><td>H</td><td>1</td></tr>
+<tr><td>CLH</td><td></td><td>Clear Half Carry Flag in SREG</td><td>H = 1</td><td>H</td><td>1</td></tr>
+
+<tr><td colspan="6" style="padding-left: 10px;"><i>IV. DATA TRANSFER INSTRUCTIONS</i></td></tr>
+<tr><td>MOV</td><td>Rd, Rr</td><td>Move Between Registers</td><td>Rd = Rr</td><td>None</td><td>1</td></tr>
+<tr><td>MOVW</td><td>Rd, Rr</td><td>Copy Register Word</td><td>Rd+1:Rd = Rr+1:Rr</td><td>None</td><td>1</td></tr>
+<tr><td>LDI</td><td>Rd, K</td><td>Load Immediate</td><td>Rd = K</td><td>None</td><td>1</td></tr>
+<tr><td>LD</td><td>Rd, X</td><td>Load Indirect</td><td>Rd = (X)</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, X+</td><td>Load Indirect and Post-Inc.</td><td>Rd = (X), X = X + 1</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, -X</td><td>Load Indirect and Pre-Dec.</td><td>X = X - 1, Rd = (X)</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, Y</td><td>Load Indirect</td><td>Rd = (Y))</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, Y+</td><td>Load Indirect and Post-Inc.</td><td>Rd = (Y), Y = Y + 1</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, -Y</td><td>Load Indirect and Pre-Dec.</td><td>Y = Y - 1, Rd = (Y)</td><td>None</td><td>2</td></tr>
+<tr><td>LDD</td><td>Rd,Y+q</td><td>Load Indirect with Displacement</td><td>Rd = (Y + q)</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, Z</td><td>Load Indirect</td><td>Rd = (Z)</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, Z+</td><td>Load Indirect and Post-Inc.</td><td>Rd = (Z), Z = Z+1</td><td>None</td><td>2</td></tr>
+<tr><td>LD</td><td>Rd, -Z</td><td>Load Indirect and Pre-Dec</td><td>Z = Z - 1, Rd = (Z)</td><td>None</td><td>2</td></tr>
+<tr><td>LDD</td><td>Rd, Z+q</td><td>Load Indirect with Displacement</td><td>Rd = (Z + q)</td><td>None</td><td>2</td></tr>
+<tr><td>LDS</td><td>Rd, k</td><td>Load Direct from SRAM</td><td>Rd = (k)</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>X, Rr</td><td>Store Indirect</td><td>(X)= Rr</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>X+, Rr</td><td>Store Indirect and Post-Inc</td><td>(X)= Rr, X = X + 1</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>-X, Rr</td><td>Store Indirect and Pre-Dec</td><td>X = X - 1, (X) = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>Y, Rr</td><td>Store Indirect</td><td>(Y) = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>Y+, Rr</td><td>Store Indirect and Post-Inc.</td><td>(Y) = Rr, Y = Y + 1</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>- Y, Rr</td><td>Store Indirect and Pre-Dec.</td><td>Y = Y - 1, (Y) = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>STD</td><td>Y+q,Rr</td><td>Store Indirect with Displacement</td><td>(Y + q) + Rr</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>Z, Rr</td><td>Store Indirect</td><td>(Z) = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>Z+, Rr</td><td>Store Indirect and Post-Inc</td><td>(Z) = Rr, Z = Z + 1</td><td>None</td><td>2</td></tr>
+<tr><td>ST</td><td>-Z, Rr</td><td>Store Indirect and Pre-Dec</td><td>Z = Z - 1, (Z) = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>STD</td><td>Z+q,Rr</td><td>Store Indirect with Displacement</td><td>(Z + q) = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>STS</td><td>k, Rr</td><td>Store Direct to SRAM</td><td>(k) = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>LPM</td><td></td><td>Load Program Memory</td><td>R0 = (Z)</td><td>None</td><td>3</td></tr>
+<tr><td>LPM</td><td>Rd, Z</td><td>Load Program Memory</td><td>Rd = (Z)</td><td>None</td><td>3</td></tr>
+<tr><td>LPM</td><td>Rd, Z+</td><td>Load Program Memory and Post-Inc</td><td>Rd = (Z), Z = Z+1</td><td>None</td><td>3</td></tr>
+<tr><td>ELPM</td><td></td><td>Extended Load Program Memory</td><td>R0 = (RAMPZ:Z)</td><td>None</td><td>3</td></tr>
+<tr><td>ELPM</td><td>Rd, Z</td><td>Extended Load Program Memory</td><td>Rd = (RAMPZ:Z)</td><td>None</td><td>3</td></tr>
+<tr><td>ELPM</td><td>Rd, Z+</td><td>Extended Load Program Memory</td><td>Rd = (RAMPZ:Z), RAMPZ:Z =RAMPZ:Z+1</td><td>None</td><td>3</td></tr>
+<tr><td>SPM</td><td></td><td>Store Program Memory</td><td>(Z) = R1:R0</td><td>None</td><td>-</td></tr>
+<tr><td>IN</td><td>Rd, P</td><td>In Port</td><td>Rd = P</td><td>None</td><td>1</td></tr>
+<tr><td>OUT</td><td>P, Rr</td><td>Out Port</td><td>P = Rr</td><td>None</td><td>1</td></tr>
+<tr><td>PUSH</td><td>Rr</td><td>Push Register on Stack</td><td>STACK = Rr</td><td>None</td><td>2</td></tr>
+<tr><td>POP</td><td>Rd</td><td>Pop Register from Stack</td><td>Rd = STACK</td><td>None</td><td>2</td></tr>
+
+<tr><td colspan="6" style="padding-left: 10px;"><i>V. MCU CONTROL INSTRUCTIONS</i></td></tr>
+<tr><td>NOP</td><td></td><td>No Operation</td><td></td><td>None</td><td>1</td></tr>
+<tr><td>SLEEP</td><td></td><td>Sleep</td><td></td><td>None</td><td>1</td></tr>
+<tr><td>WDR</td><td></td><td>Watchdog Reset</td><td></td><td>None</td><td>1</td></tr>
+<tr><td>BREAK</td><td></td><td>Break</td><td></td><td>For On-chip Debug Only</td><td>1</td></tr>
 </tbody>
 <table>
 
