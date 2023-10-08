@@ -27,11 +27,11 @@
 <tr><td><b>ADIW</b></td><td>Rdl, K</td><td><b>Ad</b>d <b>I</b>mmediate to <b>W</b>ord</td><td>Rdh:Rdl = Rdh:Rdl + K</td><td>Z, C, N, V, S</td><td>2</td></tr>
 <tr><td><b>SUB</b></td><td>Rd, Rr</td><td><b>Sub</b>tract Without Carry</td><td>Rd = Rd - Rr</td><td>Z, C, N, V, H</td><td>1</td></tr>
 <tr><td><b>SUBI</b></td><td>Rd, K</td><td><b>Sub</b>tract <b>I</b>mmediate</td><td>Rd = Rd - K</td><td>Z, C, N, V, H</td><td>1</td></tr>
-<tr><td>SBC</td><td>Rd, Rr</td><td>Subtract with Carry two Registers</td><td>Rd <- Rd - Rr - C</td><td>Z, C, N, V, H</td><td>1</td></tr>
-<tr><td>SBCI</td><td>Rd, K</td><td>Subtract with Carry Constant from Reg.</td><td>Rd <- Rd - K - C</td><td>Z, C, N, V, H</td><td>1</td></tr>
-<tr><td>SBIW</td><td>Rdl, K</td><td>Subtract Immediate from Word</td><td>Rdh:Rdl <- Rdh:Rdl - K</td><td>Z, C, N, V, S</td><td>2</td></tr>
-<tr><td>AND</td><td>Rd, Rr</td><td>Logical <b>AND</b></td><td>Rd = Rd and Rr</td><td>Z, N, V</td><td>1</td></tr>
-<tr><td>ANDI</td><td>Rd, K</td><td>Logical <b>AND</b> with <b>I</b>mmediate</td><td>Rd = Rd and K</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td><b>SBC</b></td><td>Rd, Rr</td><td><b>S</b>u<b>b</b>tract with <b>C</b>arry</td><td>Rd = Rd - Rr - C</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td><b>SBCI</b></td><td>Rd, K</td><td>Subtract Immediate with Carry SBI - Set Bit in I/O Register</td><td>Rd = Rd - K - C</td><td>Z, C, N, V, H</td><td>1</td></tr>
+<tr><td><b>SBIW</b></td><td>Rdl, K</td><td><b>S</b>u<b>b</b>tract <b>I</b>mmediate from <b>W</b>ord</td><td>Rdh:Rdl <- Rdh:Rdl - K</td><td>Z, C, N, V, S</td><td>2</td></tr>
+<tr><td><b>AND</b></td><td>Rd, Rr</td><td>Logical <b>AND</b></td><td>Rd = Rd and Rr</td><td>Z, N, V</td><td>1</td></tr>
+<tr><td><b>ANDI<b></td><td>Rd, K</td><td>Logical <b>AND</b> with <b>I</b>mmediate</td><td>Rd = Rd and K</td><td>Z, N, V</td><td>1</td></tr>
 <tr><td>OR</td><td>Rd, Rr</td><td>Logical OR Registers</td><td>Rd = Rd or Rr</td><td>Z, N, V</td><td>1</td></tr>
 <tr><td>ORI</td><td>Rd, K</td><td>Logical OR Register and Constant</td><td>Rd = Rd or Rr</td><td>Z, N, V</td><td>1</td></tr>
 <tr><td>EOR</td><td>Rd, Rr</td><td>Exclusive OR Registers</td><td>Rd = Rd xor Rr</td><td>Z, N, V</td><td>1</td></tr>
