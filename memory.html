@@ -7,6 +7,11 @@
 		border-collapse: collapse;
 		padding-left: 5px;
 		padding-right: 50px;
+		font-size: 13px;
+	}
+	html {
+		font-family: Arial, Helvetica, sans-serif;
+		
 	}
 	</style>
 </head>
@@ -17,256 +22,251 @@
 <table>
 <thead><td>#</td><td>name</td><td>7bit</td><td>6bit</td><td>5bit</td><td>4bit</td><td>3bit</td><td>2bit</td><td>1bit</td><td>0bit</td></td></thead>
 <tbody>
-<tr><td>0x0000</td><td>R00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0001</td><td>R01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0002</td><td>R02</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0003</td><td>R03</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0004</td><td>R04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0005</td><td>R05</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0006</td><td>R06</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0007</td><td>R07</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0008</td><td>R08</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0009</td><td>R09</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x000A</td><td>R10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x000B</td><td>R11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x000C</td><td>R12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x000D</td><td>R13</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x000E</td><td>R14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x000F</td><td>R15</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0010</td><td>R16</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0011</td><td>R17</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0012</td><td>R18</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0013</td><td>R19</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0014</td><td>R20</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0015</td><td>R21</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0016</td><td>R22</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0017</td><td>R23</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0018</td><td>R24</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0019</td><td>R25</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x001A</td><td>R26</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x001B</td><td>R27</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x001C</td><td>R28</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x001D</td><td>R29</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x001E</td><td>R30</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x001F</td><td>R31</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0020</td><td>PINA</td><td>PINA7</td><td>PINA6</td><td>PINA5</td><td>PINA4</td><td>PINA3</td><td>PINA2</td><td>PINA1</td><td>PINA0</td><td>port</td></tr>
-<tr><td>0x0021</td><td>DDRA</td><td>DDA7</td><td>DDA6</td><td>DDA5</td><td>DDA4</td><td>DDA3</td><td>DDA2</td><td>DDA1</td><td>DDA0</td><td>port</td></tr>
-<tr><td>0x0022</td><td>PORTA</td><td>PORTA7</td><td>PORTA6</td><td>PORTA5</td><td>PORTA4</td><td>PORTA3</td><td>PORTA2</td><td>PORTA1</td><td>PORTA0</td><td>port</td></tr>
-<tr><td>0x0023</td><td>PINB</td><td>PINB7</td><td>PINB6</td><td>PINB5</td><td>PINB4</td><td>PINB3</td><td>PINB2</td><td>PINB1</td><td>PINB0</td><td>port</td></tr>
-<tr><td>0x0024</td><td>DDRB</td><td>DDB7</td><td>DDB6</td><td>DDB5</td><td>DDB4</td><td>DDB3</td><td>DDB2</td><td>DDB1</td><td>DDB0</td><td>port</td></tr>
-<tr><td>0x0025</td><td>PORTB</td><td>PORTB7</td><td>PORTB6</td><td>PORTB5</td><td>PORTB4</td><td>PORTB3</td><td>PORTB2</td><td>PORTB1</td><td>PORTB0</td><td>port</td></tr>
-<tr><td>0x0026</td><td>PINC</td><td>PINC7</td><td>PINC6</td><td>PINC5</td><td>PINC4</td><td>PINC3</td><td>PINC2</td><td>PINC1</td><td>PINC0</td><td>port</td></tr>
-<tr><td>0x0027</td><td>DDRC</td><td>DDC7</td><td>DDC6</td><td>DDC5</td><td>DDC4</td><td>DDC3</td><td>DDC2</td><td>DDC1</td><td>DDC0</td><td>port</td></tr>
-<tr><td>0x0028</td><td>PORTC</td><td>PORTC7</td><td>PORTC6</td><td>PORTC5</td><td>PORTC4</td><td>PORTC3</td><td>PORTC2</td><td>PORTC1</td><td>PORTC0</td><td>port</td></tr>
-<tr><td>0x0029</td><td>PIND</td><td>PIND7</td><td>PIND6</td><td>PIND5</td><td>PIND4</td><td>PIND3</td><td>PIND2</td><td>PIND1</td><td>PIND0</td><td>port</td></tr>
-<tr><td>0x002A</td><td>DDRD</td><td>DDD7</td><td>DDD6</td><td>DDD5</td><td>DDD4</td><td>DDD3</td><td>DDD2</td><td>DDD1</td><td>DDD0</td><td>port</td></tr>
-<tr><td>0x002B</td><td>PORTD</td><td>PORTD7</td><td>PORTD6</td><td>PORTD5</td><td>PORTD4</td><td>PORTD3</td><td>PORTD2</td><td>PORTD1</td><td>PORTD0</td><td>port</td></tr>
-<tr><td>0x002C</td><td>PINE</td><td>PINE7</td><td>PINE6</td><td>PINE5</td><td>PINE4</td><td>PINE3</td><td>PINE2</td><td>PINE1</td><td>PINE0</td><td>port</td></tr>
-<tr><td>0x002D</td><td>DDRE</td><td>DDE7</td><td>DDE6</td><td>DDE5</td><td>DDE4</td><td>DDE3</td><td>DDE2</td><td>DDE1</td><td>DDE0</td><td>port</td></tr>
-<tr><td>0x002E</td><td>PORTE</td><td>PORTE7</td><td>PORTE6</td><td>PORTE5</td><td>PORTE4</td><td>PORTE3</td><td>PORTE2</td><td>PORTE1</td><td>PORTE0</td><td>port</td></tr>
-<tr><td>0x002F</td><td>PINF</td><td>PINF7</td><td>PINF6</td><td>PINF5</td><td>PINF4</td><td>PINF3</td><td>PINF2</td><td>PINF1</td><td>PINF0</td><td>port</td></tr>
-<tr><td>0x0030</td><td>DDRF</td><td>DDF7</td><td>DDF6</td><td>DDF5</td><td>DDF4</td><td>DDF3</td><td>DDF2</td><td>DDF1</td><td>DDF0</td><td>port</td></tr>
-<tr><td>0x0031</td><td>PORTF</td><td>PORTF7</td><td>PORTF6</td><td>PORTF5</td><td>PORTF4</td><td>PORTF3</td><td>PORTF2</td><td>PORTF1</td><td>PORTF0</td><td>port</td></tr>
-<tr><td>0x0032</td><td>PING</td><td>-</td><td>-</td><td>PING5</td><td>PING4</td><td>PING3</td><td>PING2</td><td>PING1</td><td>PING0</td><td>port</td></tr>
-<tr><td>0x0033</td><td>DDRG</td><td>-</td><td>-</td><td>DDG5</td><td>DDG4</td><td>DDG3</td><td>DDG2</td><td>DDG1</td><td>DDG0</td><td>port</td></tr>
-<tr><td>0x0034</td><td>PORTG</td><td>-</td><td>-</td><td>PORTG5</td><td>PORTG4</td><td>PORTG3</td><td>PORTG2</td><td>PORTG1</td><td>PORTG0</td><td>port</td></tr>
-<tr><td>0x0035</td><td>TIFR0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>OCF0B</td><td>OCF0A</td><td>TOV0</td><td>T/C</td></tr>
-<tr><td>0x0036</td><td>TIFR1</td><td>-</td><td>-</td><td>ICF1</td><td>-</td><td>OCF1C</td><td>OCF1B</td><td>OCF1A</td><td>TOV1</td><td>T/C</td></tr>
-<tr><td>0x0037</td><td>TIFR2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0038</td><td>TIFR3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0039</td><td>TIFR4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x003A</td><td>TIFR5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x003B</td><td>PCIFR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x003C</td><td>EIFR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x003D</td><td>EIMSK</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x003E</td><td>GPIOR0</td><td colspan="8">General Purpose I/O Register 0</td><td>CPU Register</td></tr>
-<tr><td>0x003F</td><td>EECR</td><td>-</td><td>-</td><td>EEPM1</td><td>EEPM0</td><td>EERIE</td><td>EEMPE</td><td>EEPE</td><td>EERE</td><td>EEPROM</td></tr>
-<tr><td>0x0040</td><td>EEDR</td><td colspan="8">EEPROM Data Register</td><td>EEPROM</td></tr>
-<tr><td>0x0041</td><td>EEARL</td><td colspan="8">EEPROM Address Register Low Byte</td><td>EEPROM</td></tr>
-<tr><td>0x0042</td><td>EEARH</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">EEPROM Address Register High Byte></td><td>EEPROM</td></tr>
-<tr><td>0x0043</td><td>GTCCR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0044</td><td>TCCR0A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0045</td><td>TCCR0B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0046</td><td>TCNT0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0047</td><td>OCR0A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0048</td><td>OCR0B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0049</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x004A</td><td>GPIOR1</td><td colspan="8">General Purpose I/O Register 1</td><td>CPU Register</td></tr>
-<tr><td>0x004B</td><td>GPIOR2</td><td colspan="8">General Purpose I/O Register 2</td><td>CPU Register</td></tr>
-<tr><td>0x004C</td><td>SPCR</td><td>SPIE</td><td>SPE</td><td>DORD</td><td>MSTR</td><td>CPOL</td><td>CPHA</td><td>SPR1</td><td>SPR0</td><td>SPI</td></tr>
-<tr><td>0x004D</td><td>SPSR</td><td>SPIF</td><td>WCOL</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>SPI2X</td><td>SPI</td></tr>
-<tr><td>0x004E</td><td>SPDR</td><td colspan="8">SPI Data Register</td><td>SPI</td></tr>
-<tr><td>0x004F</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0050</td><td>ACSR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0051</td><td>OCDR</td><td>OCDR7</td><td>OCDR6</td><td>OCDR5</td><td>OCDR4</td><td>OCDR3</td><td>OCDR2</td><td>OCDR1</td><td>OCDR0</td><td>JTAG</td></tr>
-<tr><td>0x0052</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0053</td><td>SMCR</td><td>-</td><td>-</td><td>-</td><td>-</td><td>SM2</td><td>SM1</td><td>SM0</td><td>SE</td><td>CPU Register</td></tr>
-<tr><td>0x0054</td><td>MCUSR</td><td>-</td><td>-</td><td>-</td><td>JTRF</td><td>WDRF</td><td>BORF</td><td>EXTRF</td><td>PORF</td><td>CPU Register, JTAG</td></tr>
-<tr><td>0x0055</td><td>MCUCR</td><td>JTD</td><td>-</td><td>-</td><td>PUD</td><td>-</td><td>-</td><td>IVSEL</td><td>IVCE</td><td>CPU Register, JTAG</td></tr>
-<tr><td>0x0056</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0057</td><td>SPMCSR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>......</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x005B</td><td>RAMPZ</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RAMPZ1</td><td>RAMPZ0</td><td>CPU Register</td></tr>
-<tr><td>0x005C</td><td>EIND</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>EIND0</td><td>CPU Register</td></tr>
-<tr><td>0x005D</td><td>SPL</td><td>SP7</td><td>SP6</td><td>SP5</td><td>SP4</td><td>SP3</td><td>SP2</td><td>SP1</td><td>SP0</td><td>CPU Register</td></tr>
-<tr><td>0x005E</td><td>SPH</td><td>SP15</td><td>SP14</td><td>SP13</td><td>SP12</td><td>SP11</td><td>SP10</td><td>SP9</td><td>SP8</td><td>CPU Register</td></tr>
-<tr><td>0x005F</td><td>SREG</td><td>I</td><td>T</td><td>H</td><td>S</td><td>V</td><td>N</td><td>Z</td><td>C</td><td>CPU Register</td></tr>
-<tr><td>0x0060</td><td>WDTCSR</td><td>WDIF</td><td>WDIE</td><td>WDP3</td><td>WDCE</td><td>WDE</td><td>WDP2</td><td>WDP1</td><td>WDP0</td><td>WDT</td></tr>
-<tr><td>0x0061</td><td>CLKPR</td><td>CLKPCE</td><td>-</td><td>-</td><td>-</td><td>CLKPS3</td><td>CLKPS2</td><td>CLKPS1</td><td>CLKPS0</td><td>CPU Register</td></tr>
-<tr><td>......</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0064</td><td>PRR0</td><td>PRTWI</td><td>PRTIM2</td><td>PRTIM0</td><td>-</td><td>PRTIM1</td><td>PRSPI</td><td>PRUSART0</td><td>PRADC</td><td>CPU Register</td></tr>
-<tr><td>0x0065</td><td>PRR1</td><td>-</td><td>-</td><td>PRTIM5</td><td>PRTIM4</td><td>PRTIM3</td><td>PRUSART3</td><td>PRUSART2</td><td>PRUSART1</td><td>CPU Register</td></tr>
-<tr><td>0x0066</td><td>OSCCAL</td><td colspan="8">Oscillator Calibration Register</td><td>CPU Register</td></tr>
-<tr><td>0x0067</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0068</td><td>PCICR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0069</td><td>EICRA</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x006A</td><td>EICRB</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x006B</td><td>PCMSK0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x006C</td><td>PCMSK1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x006D</td><td>PCMSK2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x006E</td><td>TIMSK0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x006F</td><td>TIMSK1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0070</td><td>TIMSK2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0071</td><td>TIMSK3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0072</td><td>TIMSK4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0073</td><td>TIMSK5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0074</td><td>XMCRA</td><td>SRE</td><td>SRL2</td><td>SRL1</td><td>SRL0</td><td>SRW11</td><td>SRW10</td><td>SRW01</td><td>SRW00</td><td>CPU Register</td></tr>
-<tr><td>0x0075</td><td>XMCRB</td><td>XMBK</td><td>-</td><td>-</td><td>-</td><td>-</td><td>XMM2</td><td>XMM1</td><td>XMM0</td><td>CPU Register</td></tr>
-<tr><td>......</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0078</td><td>ADCL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0079</td><td>ADCH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x007A</td><td>ADCSRA</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x007B</td><td>ADCSRB</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x007C</td><td>ADMUX</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x007D</td><td>DIDR2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x007E</td><td>DIDR0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x007F</td><td>DIDR1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0080</td><td>TCCR1A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0081</td><td>TCCR1B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0082</td><td>TCCR1C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0083</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0084</td><td>TCNT1L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0085</td><td>TCNT1H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0086</td><td>ICR1L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0087</td><td>ICR1H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0088</td><td>OCR1AL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0089</td><td>OCR1AH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x008A</td><td>OCR1BL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x008B</td><td>OCR1BH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x008C</td><td>OCR1CL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x008D</td><td>OCR1CH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x008E</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x008F</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0090</td><td>TCCR3A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0091</td><td>TCCR3B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0092</td><td>TCCR3C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0093</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0094</td><td>TCNT3L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0095</td><td>TCNT3H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0096</td><td>ICR3L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0097</td><td>ICR3H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0098</td><td>OCR3AL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0099</td><td>OCR3AH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x009A</td><td>OCR3BL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x009B</td><td>OCR3BH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x009C</td><td>OCR3CL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x009D</td><td>OCR3CH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x009E</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x009F</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A0</td><td>TCCR4A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A1</td><td>TCCR4B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A2</td><td>TCCR4C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A3</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A4</td><td>TCNT4L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A5</td><td>TCNT4H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A6</td><td>ICR4L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A7</td><td>ICR4H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A8</td><td>OCR4AL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00A9</td><td>OCR4AH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00AA</td><td>OCR4BL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00AB</td><td>OCR4BH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00AC</td><td>OCR4CL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00AD</td><td>OCR4CH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00AE</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00AF</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B0</td><td>TCCR2A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B1</td><td>TCCR2B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B2</td><td>TCNT2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B3</td><td>OCR2A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B4</td><td>OCR2B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B5</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B6</td><td>ASSR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B7</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00B8</td><td>TWBR</td><td colspan="8">2-wire Serial Interface Bit Rate Register</td><td>TWI</td></tr>
-<tr><td>0x00B9</td><td>TWSR</td><td>TWS7</td><td>TWS6</td><td>TWS5</td><td>TWS4</td><td>TWS3</td><td>-</td><td>TWPS1</td><td>TWPS0</td></tr>
-<tr><td>0x00BA</td><td>TWAR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00BB</td><td>TWDR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00BC</td><td>TWCR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00BD</td><td>TWAMR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00BE</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00BF</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00C0</td><td>UCSR0A</td><td>RXC0</td><td>TXC0</td><td>UDRE0</td><td>FE0</td><td>DOR0</td><td>UPE0</td><td>U2X0</td><td>MPCM0</td><td>USART</td></tr>
-<tr><td>0x00C1</td><td>UCSR0B</td><td>RXCIE0</td><td>TXCIE0</td><td>UDRIE0</td><td>RXEN0</td><td>TXEN0</td><td>UCSZ02</td><td>RXB80</td><td>TXB80</td><td>USART</td></tr>
-<tr><td>0x00C2</td><td>UCSR0C</td><td>UMSEL01</td><td>UMSEL00</td><td>UPM01</td><td>UPM00</td><td>USBS0</td><td>UCSZ01</td><td>UCSZ00</td><td>UCPOL0</td><td>USART</td></tr>
-<tr><td>0x00C3</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00C4</td><td>UBRR0L</td><td colspan="8">USART0 Baud Rate Register Low Byte</td><td>USART</td></tr>
-<tr><td>0x00C5</td><td>UBRR0H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART0 Baud Rate Register High Byte</td><td>USART</td></tr>
-<tr><td>0x00C6</td><td>UDR0</td><td colspan="8">USART0 I/O Data Register</td><td>USART</td></tr>
-<tr><td>0x00C7</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00C8</td><td>UCSR1A</td><td>RXC1</td><td>TXC1</td><td>UDRE1</td><td>FE1</td><td>DOR1</td><td>UPE1</td><td>U2X1</td><td>MPCM1</td><td>USART</td></tr>
-<tr><td>0x00C9</td><td>UCSR1B</td><td>RXCIE1</td><td>TXCIE1</td><td>UDRIE1</td><td>RXEN1</td><td>TXEN1</td><td>UCSZ12</td><td>RXB81</td><td>TXB81</td><td>USART</td></tr>
-<tr><td>0x00CA</td><td>UCSR1C</td><td>UMSEL11</td><td>UMSEL10</td><td>UPM11</td><td>UPM10</td><td>USBS1</td><td>UCSZ11</td><td>UCSZ10</td><td>UCPOL1</td><td>USART</td></tr>
-<tr><td>0x00CB</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00CC</td><td>UBRR1L</td><td colspan="8">USART1 Baud Rate Register Low Byte</td><td>USART</td></tr>
-<tr><td>0x00CD</td><td>UBRR1H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART1 Baud Rate Register High Byte<td>USART</td></td></tr>
-<tr><td>0x00CE</td><td>UDR1</td><td colspan="8">USART1 I/O Data Register</td><td>USART</td></tr>
-<tr><td>0x00CF</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00D0</td><td>UCSR2A</td><td>RXC2</td><td>TXC2</td><td>UDRE2</td><td>FE2</td><td>DOR2</td><td>UPE2</td><td>U2X2</td><td>MPCM2</td><td>USART</td></tr>
-<tr><td>0x00D1</td><td>UCSR2B</td><td>RXCIE2</td><td>TXCIE2</td><td>UDRIE2</td><td>RXEN2</td><td>TXEN2</td><td>UCSZ22</td><td>RXB82</td><td>TXB82</td><td>USART</td></tr>
-<tr><td>0x00D2</td><td>UCSR2C</td><td>UMSEL21</td><td>UMSEL20</td><td>UPM21</td><td>UPM20</td><td>USBS2</td><td>UCSZ21</td><td>UCSZ20</td><td>UCPOL2</td><td>USART</td></tr>
-<tr><td>0x00D3</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x00D4</td><td>UBRR2L</td><td colspan="8">USART2 Baud Rate Register Low Byte</td><td>USART</td></tr>
-<tr><td>0x00D5</td><td>UBRR2H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART2 Baud Rate Register High Byte</td><td>USART</td></tr>
-<tr><td>0x00D6</td><td>UDR2</td><td colspan="8">USART2 I/O Data Register</td><td>USART</td></tr>
-<tr><td>......</td><td>reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0100</td><td>PINH</td><td>PINH7</td><td>PINH6</td><td>PINH5</td><td>PINH4</td><td>PINH3</td><td>PINH2</td><td>PINH1</td><td>PINH0</td><td>port</td></tr>
-<tr><td>0x0101</td><td>DDRH</td><td>DDH7</td><td>DDH6</td><td>DDH5</td><td>DDH4</td><td>DDH3</td><td>DDH2</td><td>DDH1</td><td>DDH0</td><td>port</td></tr>
-<tr><td>0x0102</td><td>PORTH</td><td>PORTH7</td><td>PORTH6</td><td>PORTH5</td><td>PORTH4</td><td>PORTH3</td><td>PORTH2</td><td>PORTH1</td><td>PORTH0</td><td>port</td></tr>
-<tr><td>0x0103</td><td>PINJ</td><td>PINJ7</td><td>PINJ6</td><td>PINJ5</td><td>PINJ4</td><td>PINJ3</td><td>PINJ2</td><td>PINJ1</td><td>PINJ0</td><td>port</td></tr>
-<tr><td>0x0104</td><td>DDRJ</td><td>DDJ7</td><td>DDJ6</td><td>DDJ5</td><td>DDJ4</td><td>DDJ3</td><td>DDJ2</td><td>DDJ1</td><td>DDJ0</td><td>port</td></tr>
-<tr><td>0x0105</td><td>PORTJ</td><td>PORTJ7</td><td>PORTJ6</td><td>PORTJ5</td><td>PORTJ4</td><td>PORTJ3</td><td>PORTJ2</td><td>PORTJ1</td><td>PORTJ0</td><td>port</td></tr>
-<tr><td>0x0106</td><td>PINK</td><td>PINK7</td><td>PINK6</td><td>PINK5</td><td>PINK4</td><td>PINK3</td><td>PINK2</td><td>PINK1</td><td>PINK0</td><td>port</td></tr>
-<tr><td>0x0107</td><td>DDRK</td><td>DDK7</td><td>DDK6</td><td>DDK5</td><td>DDK4</td><td>DDK3</td><td>DDK2</td><td>DDK1</td><td>DDK0</td><td>port</td></tr>
-<tr><td>0x0108</td><td>PORTK</td><td>PORTK7</td><td>PORTK6</td><td>PORTK5</td><td>PORTK4</td><td>PORTK3</td><td>PORTK2</td><td>PORTK1</td><td>PORTK0</td><td>port</td></tr>
-<tr><td>0x0109</td><td>PINL</td><td>PINL7</td><td>PINL6</td><td>PINL5</td><td>PINL4</td><td>PINL3</td><td>PINL2</td><td>PINL1</td><td>PINL0</td><td>port</td></tr>
-<tr><td>0x010A</td><td>DDRL</td><td>DDL7</td><td>DDL6</td><td>DDL5</td><td>DDL4</td><td>DDL3</td><td>DDL2</td><td>DDL1</td><td>DDL0</td><td>port</td></tr>
-<tr><td>0x010B</td><td>PORTL</td><td>PORTL7</td><td>PORTL6</td><td>PORTL5</td><td>PORTL4</td><td>PORTL3</td><td>PORTL2</td><td>PORTL1</td><td>PORTL0</td><td>port</td></tr>
-<tr><td>......</td><td>reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0120</td><td>TCCR5A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0121</td><td>TCCR5B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0122</td><td>TCCR5C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0123</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0124</td><td>TCNT5L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0125</td><td>TCNT5H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0126</td><td>ICR5L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0127</td><td>ICR5H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0128</td><td>OCR5AL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0129</td><td>OCR5AH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x012A</td><td>OCR5BL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x012B</td><td>OCR5BH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x012C</td><td>OCR5CL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x012D</td><td>OCR5CH</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x012E</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x012F</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0130</td><td>UCSR3A</td><td>RXC3</td><td>TXC3</td><td>UDRE3</td><td>FE3</td><td>DOR3</td><td>UPE3</td><td>U2X3</td><td>MPCM3</td><td>USART</td></tr>
-<tr><td>0x0131</td><td>UCSR3B</td><td>RXCIE3</td><td>TXCIE3</td><td>UDRIE3</td><td>RXEN3</td><td>TXEN3</td><td>UCSZ32</td><td>RXB83</td><td>TXB83</td><td>USART</td></tr>
-<tr><td>0x0132</td><td>UCSR3C</td><td>UMSEL31</td><td>UMSEL30</td><td>UPM31</td><td>UPM30</td><td>USBS3</td><td>UCSZ31</td><td>UCSZ30</td><td>UCPOL3</td><td>USART</td></tr>
-<tr><td>0x0133</td><td>Reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x0134</td><td>UBRR3L</td><td colspan="8">USART3 Baud Rate Register Low Byte</td><td>USART</td></tr>
-<tr><td>0x0135</td><td>UBRR3H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART3 Baud Rate Register High Byte</td></tr>
-<tr><td>0x0136</td><td>UDR3</td><td colspan="8">USART3 I/O Data Register</td><td>USART</td></tr>
-<tr><td>......</td><td>reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>0x01FF</td><td>reserved</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0000</td><td  title="А вот и я!">R00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0001</td><td>R01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0002</td><td>R02</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0003</td><td>R03</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0004</td><td>R04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0005</td><td>R05</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0006</td><td>R06</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0007</td><td>R07</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0008</td><td>R08</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0009</td><td>R09</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x000A</td><td>R10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x000B</td><td>R11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x000C</td><td>R12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x000D</td><td>R13</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x000E</td><td>R14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x000F</td><td>R15</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0010</td><td>R16</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0011</td><td>R17</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0012</td><td>R18</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0013</td><td>R19</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0014</td><td>R20</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0015</td><td>R21</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0016</td><td>R22</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0017</td><td>R23</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0018</td><td>R24</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0019</td><td>R25</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x001A</td><td>R26</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x001B</td><td>R27</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x001C</td><td>R28</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x001D</td><td>R29</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x001E</td><td>R30</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x001F</td><td>R31</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>0x0020</td><td><b>PINA</b></td><td>PINA7</td><td>PINA6</td><td>PINA5</td><td>PINA4</td><td>PINA3</td><td>PINA2</td><td>PINA1</td><td>PINA0</td><td>Port <b>A</b> Input <b>Pin</b>s Address</td><td>Port A</td></tr>
+<tr><td>0x0021</td><td><b>DDRA</b></td><td>DDA7</td><td>DDA6</td><td>DDA5</td><td>DDA4</td><td>DDA3</td><td>DDA2</td><td>DDA1</td><td>DDA0</td><td>Port <b>A</b> <b>D</b>ata <b>D</b>irection <b>R</b>egister</td><td>Port A</td></tr>
+<tr><td>0x0022</td><td><b>PORTA</b></td><td>PORTA7</td><td>PORTA6</td><td>PORTA5</td><td>PORTA4</td><td>PORTA3</td><td>PORTA2</td><td>PORTA1</td><td>PORTA0</td><td><b>Port A</b> Data Register</td><td>Port A</td></tr>
+<tr><td>0x0023</td><td>PINB</td><td>PINB7</td><td>PINB6</td><td>PINB5</td><td>PINB4</td><td>PINB3</td><td>PINB2</td><td>PINB1</td><td>PINB0</td><td>Port B</td></tr>
+<tr><td>0x0024</td><td>DDRB</td><td>DDB7</td><td>DDB6</td><td>DDB5</td><td>DDB4</td><td>DDB3</td><td>DDB2</td><td>DDB1</td><td>DDB0</td><td>Port B</td></tr>
+<tr><td>0x0025</td><td>PORTB</td><td>PORTB7</td><td>PORTB6</td><td>PORTB5</td><td>PORTB4</td><td>PORTB3</td><td>PORTB2</td><td>PORTB1</td><td>PORTB0</td><td>Port B</td></tr>
+<tr><td>0x0026</td><td>PINC</td><td>PINC7</td><td>PINC6</td><td>PINC5</td><td>PINC4</td><td>PINC3</td><td>PINC2</td><td>PINC1</td><td>PINC0</td><td>Port C</td></tr>
+<tr><td>0x0027</td><td>DDRC</td><td>DDC7</td><td>DDC6</td><td>DDC5</td><td>DDC4</td><td>DDC3</td><td>DDC2</td><td>DDC1</td><td>DDC0</td><td>Port C</td></tr>
+<tr><td>0x0028</td><td>PORTC</td><td>PORTC7</td><td>PORTC6</td><td>PORTC5</td><td>PORTC4</td><td>PORTC3</td><td>PORTC2</td><td>PORTC1</td><td>PORTC0</td><td>Port C</td></tr>
+<tr><td>0x0029</td><td>PIND</td><td>PIND7</td><td>PIND6</td><td>PIND5</td><td>PIND4</td><td>PIND3</td><td>PIND2</td><td>PIND1</td><td>PIND0</td><td>Port D</td></tr>
+<tr><td>0x002A</td><td>DDRD</td><td>DDD7</td><td>DDD6</td><td>DDD5</td><td>DDD4</td><td>DDD3</td><td>DDD2</td><td>DDD1</td><td>DDD0</td><td>Port D</td></tr>
+<tr><td>0x002B</td><td>PORTD</td><td>PORTD7</td><td>PORTD6</td><td>PORTD5</td><td>PORTD4</td><td>PORTD3</td><td>PORTD2</td><td>PORTD1</td><td>PORTD0</td><td>Port D</td></tr>
+<tr><td>0x002C</td><td>PINE</td><td>PINE7</td><td>PINE6</td><td>PINE5</td><td>PINE4</td><td>PINE3</td><td>PINE2</td><td>PINE1</td><td>PINE0</td><td>Port E</td></tr>
+<tr><td>0x002D</td><td>DDRE</td><td>DDE7</td><td>DDE6</td><td>DDE5</td><td>DDE4</td><td>DDE3</td><td>DDE2</td><td>DDE1</td><td>DDE0</td><td>Port E</td></tr>
+<tr><td>0x002E</td><td>PORTE</td><td>PORTE7</td><td>PORTE6</td><td>PORTE5</td><td>PORTE4</td><td>PORTE3</td><td>PORTE2</td><td>PORTE1</td><td>PORTE0</td><td>Port E</td></tr>
+<tr><td>0x002F</td><td>PINF</td><td>PINF7</td><td>PINF6</td><td>PINF5</td><td>PINF4</td><td>PINF3</td><td>PINF2</td><td>PINF1</td><td>PINF0</td><td>Port F</td></tr>
+<tr><td>0x0030</td><td>DDRF</td><td>DDF7</td><td>DDF6</td><td>DDF5</td><td>DDF4</td><td>DDF3</td><td>DDF2</td><td>DDF1</td><td>DDF0</td><td>Port F</td></tr>
+<tr><td>0x0031</td><td>PORTF</td><td>PORTF7</td><td>PORTF6</td><td>PORTF5</td><td>PORTF4</td><td>PORTF3</td><td>PORTF2</td><td>PORTF1</td><td>PORTF0</td><td>Port F</td></tr>
+<tr><td>0x0032</td><td>PING</td><td>-</td><td>-</td><td>PING5</td><td>PING4</td><td>PING3</td><td>PING2</td><td>PING1</td><td>PING0</td><td>Port G</td></tr>
+<tr><td>0x0033</td><td>DDRG</td><td>-</td><td>-</td><td>DDG5</td><td>DDG4</td><td>DDG3</td><td>DDG2</td><td>DDG1</td><td>DDG0</td><td>Port G</td></tr>
+<tr><td>0x0034</td><td>PORTG</td><td>-</td><td>-</td><td>PORTG5</td><td>PORTG4</td><td>PORTG3</td><td>PORTG2</td><td>PORTG1</td><td>PORTG0</td><td>Port G</td></tr>
+<tr><td>0x0035</td><td>TIFR0</b></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td title="Timer/Counter 0 Output Compare B Match Flag">OCF0B</td><td title="Timer/Counter 0 Output Compare A Match Flag">OCF0A</td><td title="Timer/Counter 0 Overflow Flag">TOV0</td><td><b>T</b>imer/Counter <b>0 I</b>nterrupt <b>F</b>lag <b>R</b>egister</td><td>T/C 0</td></tr>
+<tr><td>0x0036</td><td>TIFR1</td><td>-</td><td>-</td><td>ICF1</td><td>-</td><td>OCF1C</td><td>OCF1B</td><td>OCF1A</td><td>TOV1</td><td><b>T</b>imer/Counter <b>1 I</b>nterrupt <b>F</b>lag <b>R</b>egister</td><td>T/C 1</td></tr>
+<tr><td>0x0037</td><td>TIFR2</td><td>SPMIE</td><td>RWWSB</td><td>SIGRD</td><td>RWWSRE</td><td>BLBSET</td><td>PGWRT</td><td>PGERS</td><td>SPMEN</td><td><b>T</b>imer/Counter <b>2 I</b>nterrupt <b>F</b>lag <b>R</b>egister</td><td>T/C 2</td></tr>
+<tr><td>0x0038</td><td>TIFR3</td><td>-</td><td>-</td><td>ICF3</td><td>-</td><td>OCF3C</td><td>OCF3B</td><td>OCF3A</td><td>TOV3</td><td><b>T</b>imer/Counter <b>3 I</b>nterrupt <b>F</b>lag <b>R</b>egister</td><td>T/C 3</td></tr>
+<tr><td>0x0039</td><td>TIFR4</td><td>-</td><td>-</td><td>ICF4</td><td>-</td><td>OCF4C</td><td>OCF4B</td><td>OCF4A</td><td>TOV4</td><td><b>T</b>imer/Counter <b>4 I</b>nterrupt <b>F</b>lag <b>R</b>egister</td><td>T/C 4</td></tr>
+<tr><td>0x003A</td><td>TIFR5</td><td>-</td><td>-</td><td>ICF5</td><td>-</td><td>OCF5C</td><td>OCF5B</td><td>OCF5A</td><td>TOV5</td><td><b>T</b>imer/Counter <b>5 I</b>nterrupt <b>F</b>lag <b>R</b>egister</td><td>T/C 5</td></tr>
+<tr><td>0x003B</td><td>PCIFR</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>PCIF2</td><td>PCIF1</td><td>PCIF0</td><td>Pin Change Interrupt Flag Register</td><td>Interrupt</td></tr>
+<tr><td>0x003C</td><td>EIFR</td><td>INTF7</td><td>INTF6</td><td>INTF5</td><td>INTF4</td><td>INTF3</td><td>INTF2</td><td>INTF1</td><td>INTF0</td><td>External Interrupt Flag Register</td><td>Interrupt</td></tr>
+<tr><td>0x003D</td><td>EIMSK</td><td>INT7</td><td>INT6</td><td>INT5</td><td>INT4</td><td>INT3</td><td>INT2</td><td>INT1</td><td>INT0</td><td>External Interrupt Mask Register</td><td>Interrupt</td></tr>
+<tr><td>0x003E</td><td>GPIOR0</td><td colspan="8">General Purpose I/O Register 0</td><td>General Purpose I/O Register 0</td><td>CPU Register</td></tr>
+<tr><td>0x003F</td><td>EECR</td><td>-</td><td>-</td><td>EEPM1</td><td>EEPM0</td><td>EERIE</td><td>EEMPE</td><td>EEPE</td><td>EERE</td><td>The EEPROM Control Register</td><td>EEPROM</td></tr>
+<tr><td>0x0040</td><td>EEDR</td><td colspan="8">EEPROM Data Register</td><td>The EEPROM Data Register</td><td>EEPROM</td></tr>
+<tr><td>0x0041</td><td>EEARL</td><td colspan="8">EEPROM Address Register Low Byte</td><td>The EEPROM Address Register</td><td>EEPROM</td></tr>
+<tr><td>0x0042</td><td>EEARH</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">EEPROM Address Register High Byte></td><td>The EEPROM Address Register</td><td>EEPROM</td></tr>
+<tr><td>0x0043</td><td>GTCCR</td><td>TSM</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>PSRASY</td><td>PSRSYNC</td><td>General Timer/Counter Control Register</td><td>T/C 0, T/C 2</td></tr>
+<tr><td>0x0044</td><td>TCCR0A</td><td>COM0A1</td><td>COM0A0</td><td>COM0B1</td><td>COM0B0</td><td>-</td><td>-</td><td>WGM01</td><td>WGM00</td><td>Timer/Counter 0 Control Register A</td><td>T/C 0</td></tr>
+<tr><td>0x0045</td><td>TCCR0B</td><td>FOC0A</td><td>FOC0B</td><td>-</td><td>-</td><td>WGM02</td><td>CS02</td><td>CS01</td><td>CS00</td><td>Timer/Counter 0 Control Register B</td><td>T/C 0</td></tr>
+<tr><td>0x0046</td><td>TCNT0</td><td colspan = "8">Timer/Counter 0 (8 Bit)</td><td>Timer/Counter 0 Register</td><td>T/C 0</td></tr>
+<tr><td>0x0047</td><td>OCR0A</td><td colspan = "8">Timer/Counter 0 Output Compare Register A</td><td>Output Compare 0 Register A</td><td>T/C 0</td></tr>
+<tr><td>0x0048</td><td>OCR0B</td><td colspan = "8">Timer/Counter 0 Output Compare Register B</td><td>Output Compare 0 Register A</td><td>T/C 0</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan = "10"></td></tr>
+<tr><td>0x004A</td><td>GPIOR1</td><td colspan="8">General Purpose I/O Register 1</td><td>General Purpose I/O Register 1</td><td>CPU Register</td></tr>
+<tr><td>0x004B</td><td>GPIOR2</td><td colspan="8">General Purpose I/O Register 2</td><td>General Purpose I/O Register 2</td><td>CPU Register</td></tr>
+<tr><td>0x004C</td><td>SPCR</td><td>SPIE</td><td>SPE</td><td>DORD</td><td>MSTR</td><td>CPOL</td><td>CPHA</td><td>SPR1</td><td>SPR0</td><td>SPI Control Register</td><td>SPI</td></tr>
+<tr><td>0x004D</td><td>SPSR</td><td>SPIF</td><td>WCOL</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>SPI2X</td><td>SPI Status Register</td><td>SPI</td></tr>
+<tr><td>0x004E</td><td>SPDR</td><td colspan="8">SPI Data Register</td><dt>SPI Data Register</td><td>SPI Data Register</td><td>SPI</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0050</td><td>ACSR</td><td>ACD</td><td>ACBG</td><td>ACO</td><td>ACI</td><td>ACIE</td><td>ACIC</td><td>ACIS1</td><td>ACIS0</td><td>Analog Comparator Control and Status Register</td><td>AC</td></tr>
+<tr><td>0x0051</td><td>OCDR</td><td>OCDR7</td><td>OCDR6</td><td>OCDR5</td><td>OCDR4</td><td>OCDR3</td><td>OCDR2</td><td>OCDR1</td><td>OCDR0</td><td>On-chip Debug Register</td><td>JTAG</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0053</td><td>SMCR</td><td>-</td><td>-</td><td>-</td><td>-</td><td>SM2</td><td>SM1</td><td>SM0</td><td>SE</td><td>Sleep Mode Control Register</td><td>CPU Register</td></tr>
+<tr><td>0x0054</td><td>MCUSR</td><td>-</td><td>-</td><td>-</td><td>JTRF</td><td>WDRF</td><td>BORF</td><td>EXTRF</td><td>PORF</td><td>MCU Status Register</td><td>CPU Register, JTAG</td></tr>
+<tr><td>0x0055</td><td>MCUCR</td><td>JTD</td><td>-</td><td>-</td><td>PUD</td><td>-</td><td>-</td><td>IVSEL</td><td>IVCE</td><td>MCU Control Register</td><td>CPU Register, JTAG</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0057</td><td>SPMCSR</td><td>SPMIE</td><td>RWWSB</td><td>SIGRD</td><td>RWWSRE</td><td>BLBSET</td><td>PGWRT</td><td>PGERS</td><td>SPMEN</td><td>Store Program Memory Control and Status Register</td><td>BootLoad</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x005B</td><td>RAMPZ</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RAMPZ1</td><td>RAMPZ0</td><td>Extended Z-pointer Register for ELPM/SPM</td><td>CPU Register</td></tr>
+<tr><td>0x005C</td><td>EIND</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>EIND0</td><td>Extended Indirect Register</td><td>CPU Register</td></tr>
+<tr><td>0x005D</td><td>SPL</td><td>SP7</td><td>SP6</td><td>SP5</td><td>SP4</td><td>SP3</td><td>SP2</td><td>SP1</td><td>SP0</td><td>Stack Pointer</td><td>CPU Register</td></tr>
+<tr><td>0x005E</td><td>SPH</td><td>SP15</td><td>SP14</td><td>SP13</td><td>SP12</td><td>SP11</td><td>SP10</td><td>SP9</td><td>SP8</td><td>Stack Pointer</td><td>CPU Register</td></tr>
+<tr><td>0x005F</td><td>SREG</td><td>I</td><td>T</td><td>H</td><td>S</td><td>V</td><td>N</td><td>Z</td><td>C</td><td>Status Register</td><td>CPU Register</td></tr>
+<tr><td>0x0060</td><td>WDTCSR</td><td>WDIF</td><td>WDIE</td><td>WDP3</td><td>WDCE</td><td>WDE</td><td>WDP2</td><td>WDP1</td><td>WDP0</td><td>Watchdog Timer Control Register</td><td>WDT</td></tr>
+<tr><td>0x0061</td><td>CLKPR</td><td>CLKPCE</td><td>-</td><td>-</td><td>-</td><td>CLKPS3</td><td>CLKPS2</td><td>CLKPS1</td><td>CLKPS0</td><td>Clock Prescale Register</td><td>CPU Register</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0064</td><td>PRR0</td><td>PRTWI</td><td>PRTIM2</td><td>PRTIM0</td><td>-</td><td>PRTIM1</td><td>PRSPI</td><td>PRUSART0</td><td>PRADC</td><td>Power Reduction Register 0</td><td>CPU Register</td></tr>
+<tr><td>0x0065</td><td>PRR1</td><td>-</td><td>-</td><td>PRTIM5</td><td>PRTIM4</td><td>PRTIM3</td><td>PRUSART3</td><td>PRUSART2</td><td>PRUSART1</td><td>Power Reduction Register 1</td><td>CPU Register</td></tr>
+<tr><td>0x0066</td><td>OSCCAL</td><td colspan="8">Oscillator Calibration Register</td><td>Oscillator Calibration Register</td><td>CPU Register</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0068</td><td>PCICR</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>PCIE2</td><td>PCIE1</td><td>PCIE0</td><td>Pin Change Interrupt Control Register</td><td>Interrupt</td></tr>
+<tr><td>0x0069</td><td>EICRA</td><td>ISC31</td><td>ISC30</td><td>ISC21</td><td>ISC20</td><td>ISC11</td><td>ISC10</td><td>ISC01</td><td>ISC00</td><td>External Interrupt Control Register A</td><td>Interrupt</td></tr>
+<tr><td>0x006A</td><td>EICRB</td><td>ISC71</td><td>ISC70</td><td>ISC61</td><td>ISC60</td><td>ISC51</td><td>ISC50</td><td>ISC41</td><td>ISC40</td><td>External Interrupt Control Register B</td><td>Interrupt</td></tr>
+<tr><td>0x006B</td><td>PCMSK0</td><td>PCINT7</td><td>PCINT6</td><td>PCINT5</td><td>PCINT4</td><td>PCINT3</td><td>PCINT2</td><td>PCINT1</td><td>PCINT0</td><td>Pin Change Mask Register 0</td><td>Interrupt</td></tr>
+<tr><td>0x006C</td><td>PCMSK1</td><td>PCINT15</td><td>PCINT14</td><td>PCINT13</td><td>PCINT12</td><td>PCINT11</td><td>PCINT10</td><td>PCINT9</td><td>PCINT8</td><td>Pin Change Mask Register 1</td><td>Interrupt</td></tr>
+<tr><td>0x006D</td><td>PCMSK2</td><td>PCINT23</td><td>PCINT22</td><td>PCINT21</td><td>PCINT20</td><td>PCINT19</td><td>PCINT18</td><td>PCINT17</td><td>PCINT16</td><td>Pin Change Mask Register 2</td><td>Interrupt</td></tr>
+<tr><td>0x006E</td><td>TIMSK0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>OCIE0B</td><td>OCIE0A</td><td>TOIE0</td><td>Timer/Counter 0 Interrupt Mask Register</td><td>T/C 0</td></tr>
+<tr><td>0x006F</td><td>TIMSK1</td><td>-</td><td>-</td><td>ICIE1</td><td>-</td><td>OCIE1C</td><td>OCIE1B</td><td>OCIE1A</td><td>TOIE1</td><td>Timer/Counter 1 Interrupt Mask Register</td><td>T/C 1</td></tr>
+<tr><td>0x0070</td><td>TIMSK2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>OCIE2B</td><td>OCIE2A</td><td>TOIE2</td><td>Timer/Counter 2 Interrupt Mask Register</td><td>T/C 2</td></tr>
+<tr><td>0x0071</td><td>TIMSK3</td><td>-</td><td>-</td><td>ICIE3</td><td>-</td><td>OCIE3C</td><td>OCIE3B</td><td>OCIE3A</td><td>TOIE3</td><td>Timer/Counter 3 Interrupt Mask Register</td><td>T/C 3</td></tr>
+<tr><td>0x0072</td><td>TIMSK4</td><td>-</td><td>-</td><td>ICIE4</td><td>-</td><td>OCIE4C</td><td>OCIE4B</td><td>OCIE4A</td><td>TOIE4</td><td>Timer/Counter 4 Interrupt Mask Register</td><td>T/C 4</td></tr>
+<tr><td>0x0073</td><td>TIMSK5</td><td>-</td><td>-</td><td>ICIE5</td><td>-</td><td>OCIE5C</td><td>OCIE5B</td><td>OCIE5A</td><td>TOIE5</td><td>Timer/Counter 5 Interrupt Mask Register</td><td>T/C 5</td></tr>
+<tr><td>0x0074</td><td>XMCRA</td><td>SRE</td><td>SRL2</td><td>SRL1</td><td>SRL0</td><td>SRW11</td><td>SRW10</td><td>SRW01</td><td>SRW00</td><td>External Memory Control Register A</td><td>CPU Register</td></tr>
+<tr><td>0x0075</td><td>XMCRB</td><td>XMBK</td><td>-</td><td>-</td><td>-</td><td>-</td><td>XMM2</td><td>XMM1</td><td>XMM0</td><td>External Memory Control Register B</td><td>CPU Register</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0078</td><td>ADCL</td><td colspan = "8">ADC Data Register Low byte</td><td>The ADC Data Register</td><td>ADC</td></tr>
+<tr><td>0x0079</td><td>ADCH</td><td colspan = "8">ADC Data Register High byte</td><td>The ADC Data Register</td><td>ADC</td></tr>
+<tr><td>0x007A</td><td>ADCSRA</td><td>ADEN</td><td>ADSC</td><td>ADATE</td><td>ADIF</td><td>ADIE</td><td>ADPS2</td><td>ADPS1</td><td>ADPS0</td><td>ADC Control and Status Register A</td><td>ADC</td></tr>
+<tr><td>0x007B</td><td>ADCSRB</td><td>-</td><td>ACME</td><td>-</td><td>-</td><td>MUX5</td><td>ADTS2</td><td>ADTS1</td><td>ADTS0</td><td>ADC Control and Status Register B</td><td>ADC, AC</td></tr>
+<tr><td>0x007C</td><td>ADMUX</td><td>REFS1</td><td>REFS0</td><td>ADLAR</td><td>MUX4</td><td>MUX3</td><td>MUX2</td><td>MUX1</td><td>MUX0</td><td>ADC Multiplexer Selection Register</td><td>ADC</td></tr>
+<tr><td>0x007D</td><td>DIDR2</td><td>ADC15D</td><td>ADC14D</td><td>ADC13D</td><td>ADC12D</td><td>ADC11D</td><td>ADC10D</td><td>ADC9D</td><td>ADC8D</td><td>Digital Input Disable Register 2</td><td>ADC</td></tr>
+<tr><td>0x007E</td><td>DIDR0</td><td>ADC7D</td><td>ADC6D</td><td>ADC5D</td><td>ADC4D</td><td>ADC3D</td><td>ADC2D</td><td>ADC1D</td><td>ADC0D</td><td>Digital Input Disable Register 0</td><td>ADC</td></tr>
+<tr><td>0x007F</td><td>DIDR1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>AIN1D</td><td>AIN0D</td><td>Digital Input Disable Register 1</td><td>AC</td></tr>
+<tr><td>0x0080</td><td>TCCR1A</td><td>COM1A1</td><td>COM1A0</td><td>COM1B1</td><td>COM1B0</td><td>COM1C1</td><td>COM1C0</td><td>WGM11</td><td>WGM10</td><td>T/C 1</td></tr>
+<tr><td>0x0081</td><td>TCCR1B</td><td>ICNC1</td><td>ICES1</td><td>-</td><td>WGM13</td><td>WGM12</td><td>CS12</td><td>CS11</td><td>CS10</td><td>T/C 1</td></tr>
+<tr><td>0x0082</td><td>TCCR1C</td><td>FOC1A</td><td>FOC1B</td><td>FOC1C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>T/C 1</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0084</td><td>TCNT1L</td><td colspan = "8">Timer/Counter1 - Counter Register Low Byte</td><td>T/C 1</td></tr>
+<tr><td>0x0085</td><td>TCNT1H</td><td colspan = "8">Timer/Counter1 - Counter Register High Byte</td><td>T/C 1</td></tr>
+<tr><td>0x0086</td><td>ICR1L</td><td colspan = "8">Timer/Counter1 - Input Capture Register Low Byte</td><td>T/C 1</td></tr>
+<tr><td>0x0087</td><td>ICR1H</td><td colspan = "8">Timer/Counter1 - Input Capture Register High Byte</td><td>T/C 1</td></tr>
+<tr><td>0x0088</td><td>OCR1AL</td><td colspan = "8">Timer/Counter1 - Output Compare Register A Low Byte</td><td>T/C 1</td></tr>
+<tr><td>0x0089</td><td>OCR1AH</td><td colspan = "8">Timer/Counter1 - Output Compare Register A High Byte</td><td>T/C 1</td></tr>
+<tr><td>0x008A</td><td>OCR1BL</td><td colspan = "8">Timer/Counter1 - Output Compare Register B Low Byte</td><td>T/C 1</td></tr>
+<tr><td>0x008B</td><td>OCR1BH</td><td colspan = "8">Timer/Counter1 - Output Compare Register B High Byte</td><td>T/C 1</td></tr>
+<tr><td>0x008C</td><td>OCR1CL</td><td colspan = "8">Timer/Counter1 - Output Compare Register C Low Byte</td><td>T/C 1</td></tr>
+<tr><td>0x008D</td><td>OCR1CH</td><td colspan = "8">Timer/Counter1 - Output Compare Register C High Byte</td><td>T/C 1</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0090</td><td>TCCR3A</td><td>COM3A1</td><td>COM3A0</td><td>COM3B1</td><td>COM3B0</td><td>COM3C1</td><td>COM3C0</td><td>WGM31</td><td>WGM30</td><td>T/C 3</td></tr>
+<tr><td>0x0091</td><td>TCCR3B</td><td>ICNC3</td><td>ICES3</td><td>-</td><td>WGM33</td><td>WGM32</td><td>CS32</td><td>CS31</td><td>CS30</td><td>T/C 3</td></tr>
+<tr><td>0x0092</td><td>TCCR3C</td><td>FOC3A</td><td>FOC3B</td><td>FOC3C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>T/C 3</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0094</td><td>TCNT3L</td><td colspan = "8">Timer/Counter3 - Counter Register Low Byte</td><td>T/C 3</td></tr>
+<tr><td>0x0095</td><td>TCNT3H</td><td colspan = "8">Timer/Counter3 - Counter Register High Byte</td><td>T/C 3</td></tr>
+<tr><td>0x0096</td><td>ICR3L</td><td colspan = "8">Timer/Counter3 - Input Capture Register Low Byte</td><td>T/C 3</td></tr>
+<tr><td>0x0097</td><td>ICR3H</td><td colspan = "8">Timer/Counter3 - Input Capture Register High Byte</td><td>T/C 3</td></tr>
+<tr><td>0x0098</td><td>OCR3AL</td><td colspan = "8">Timer/Counter3 - Output Compare Register A Low Byte</td><td>T/C 3</td></tr>
+<tr><td>0x0099</td><td>OCR3AH</td><td colspan = "8">Timer/Counter3 - Output Compare Register A High Byte</td><td>T/C 3</td></tr>
+<tr><td>0x009A</td><td>OCR3BL</td><td colspan = "8">Timer/Counter3 - Output Compare Register B Low Byte</td><td>T/C 3</td></tr>
+<tr><td>0x009B</td><td>OCR3BH</td><td colspan = "8">Timer/Counter3 - Output Compare Register B High Byte</td><td>T/C 3</td></tr>
+<tr><td>0x009C</td><td>OCR3CL</td><td colspan = "8">Timer/Counter3 - Output Compare Register C Low Byte</td><td>T/C 3</td></tr>
+<tr><td>0x009D</td><td>OCR3CH</td><td colspan = "8">Timer/Counter3 - Output Compare Register C High Byte</td><td>T/C 3</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00A0</td><td>TCCR4A</td><td>COM4A1</td><td>COM4A0</td><td>COM4B1</td><td>COM4B0</td><td>COM4C1</td><td>COM4C0</td><td>WGM41</td><td>WGM40</td><td>T/C 4</td></tr>
+<tr><td>0x00A1</td><td>TCCR4B</td><td>ICNC4</td><td>ICES4</td><td>-</td><td>WGM43</td><td>WGM42</td><td>CS42</td><td>CS41</td><td>CS40</td><td>T/C 4</td></tr>
+<tr><td>0x00A2</td><td>TCCR4C</td><td>FOC4A</td><td>FOC4B</td><td>FOC4C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>T/C 4</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00A4</td><td>TCNT4L</td><td colspan = "8">Timer/Counter4 - Counter Register Low Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00A5</td><td>TCNT4H</td><td colspan = "8">Timer/Counter4 - Counter Register High Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00A6</td><td>ICR4L</td><td colspan = "8">Timer/Counter4 - Input Capture Register Low Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00A7</td><td>ICR4H</td><td colspan = "8">Timer/Counter4 - Input Capture Register High Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00A8</td><td>OCR4AL</td><td colspan = "8">Timer/Counter4 - Output Compare Register A Low Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00A9</td><td>OCR4AH</td><td colspan = "8">Timer/Counter4 - Output Compare Register A High Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00AA</td><td>OCR4BL</td><td colspan = "8">Timer/Counter4 - Output Compare Register B Low Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00AB</td><td>OCR4BH</td><td colspan = "8">Timer/Counter4 - Output Compare Register B High Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00AC</td><td>OCR4CL</td><td colspan = "8">Timer/Counter4 - Output Compare Register C Low Byte</td><td>T/C 4</td></tr>
+<tr><td>0x00AD</td><td>OCR4CH</td><td colspan = "8">Timer/Counter4 - Output Compare Register C High Byte</td><td>T/C 4</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00B0</td><td>TCCR2A</td><td>COM2A1</td><td>COM2A0</td><td>COM2B1</td><td>COM2B0</td><td>-</td><td>-</td><td>WGM21</td><td>WGM20</td><td>T/C 2</td></tr>
+<tr><td>0x00B1</td><td>TCCR2B</td><td>FOC2A</td><td>FOC2B</td><td>-</td><td>-</td><td>WGM22</td><td>CS22</td><td>CS21</td><td>CS20</td><td>T/C 2</td></tr>
+<tr><td>0x00B2</td><td>TCNT2</td><td colspan = "8">Timer/Counter2 (8 Bit)</td><td>T/C 2</td></tr>
+<tr><td>0x00B3</td><td>OCR2A</td><td colspan = "8">Timer/Counter2 Output Compare Register A</td><td>T/C 2</td></tr>
+<tr><td>0x00B4</td><td>OCR2B</td><td colspan = "8">Timer/Counter2 Output Compare Register B</td><td>T/C 2</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00B6</td><td>ASSR</td><td>-</td><td>EXCLK</td><td>AS2</td><td>TCN2UB</td><td>OCR2AUB</td><td>OCR2BUB</td><td>TCR2AUB</td><td>TCR2BUB</td><td>T/C 2</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00B8</td><td>TWBR</td><td colspan="8">2-wire Serial Interface Bit Rate Register</td><td>TWI Bit Rate Register</td><td>TWI</td></tr>
+<tr><td>0x00B9</td><td>TWSR</td><td>TWS7</td><td>TWS6</td><td>TWS5</td><td>TWS4</td><td>TWS3</td><td>-</td><td>TWPS1</td><td>TWPS0</td><td>TWI Status Register</td><td>TWI</td></tr>
+<tr><td>0x00BA</td><td>TWAR</td><td>TWA6</td><td>TWA5</td><td>TWA4</td><td>TWA3</td><td>TWA2</td><td>TWA1</td><td>TWA0</td><td>TWGCE</td><td>TWI (Slave) Address Register</td><td>TWI</td></tr>
+<tr><td>0x00BB</td><td>TWDR</td><td colspan="8">2-wire Serial Interface Data Register</td><td>TWI Data Register</td><td>TWI</td></tr>
+<tr><td>0x00BC</td><td>TWCR</td><td>TWINT</td><td>TWEA</td><td>TWSTA</td><td>TWSTO</td><td>TWWC</td><td>TWEN</td><td>-</td><td>TWIE</td><td>TWI Control Register</td><td>TWI</td></tr>
+<tr><td>0x00BD</td><td>TWAMR</td><td>TWAM6</td><td>TWAM5</td><td>TWAM4</td><td>TWAM3</td><td>TWAM2</td><td>TWAM1</td><td>TWAM0</td><td>-</td><td>TWI (Slave) Address Mask Register</td><td>TWI</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00C0</td><td>UCSR0A</td><td>RXC0</td><td>TXC0</td><td>UDRE0</td><td>FE0</td><td>DOR0</td><td>UPE0</td><td>U2X0</td><td>MPCM0</td><td>USART 0</td></tr>
+<tr><td>0x00C1</td><td>UCSR0B</td><td>RXCIE0</td><td>TXCIE0</td><td>UDRIE0</td><td>RXEN0</td><td>TXEN0</td><td>UCSZ02</td><td>RXB80</td><td>TXB80</td><td>USART MSPIM Control and Status Register 0 B</td><td>USART 0</td></tr>
+<tr><td>0x00C2</td><td>UCSR0C</td><td>UMSEL01</td><td>UMSEL00</td><td>UPM01</td><td>UPM00</td><td>USBS0</td><td>UCSZ01</td><td>UCSZ00</td><td>UCPOL0</td><td>USART MSPIM Control and Status Register 0 C</td><td>USART 0</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00C4</td><td>UBRR0L</td><td colspan="8">USART0 Baud Rate Register Low Byte</td><td>USART 0</td></tr>
+<tr><td>0x00C5</td><td>UBRR0H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART0 Baud Rate Register High Byte</td><td>USART 0</td></tr>
+<tr><td>0x00C6</td><td>UDR0</td><td colspan="8">USART0 I/O Data Register</td><td>USART 0</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00C8</td><td>UCSR1A</td><td>RXC1</td><td>TXC1</td><td>UDRE1</td><td>FE1</td><td>DOR1</td><td>UPE1</td><td>U2X1</td><td>MPCM1</td><td>USART 1</td></tr>
+<tr><td>0x00C9</td><td>UCSR1B</td><td>RXCIE1</td><td>TXCIE1</td><td>UDRIE1</td><td>RXEN1</td><td>TXEN1</td><td>UCSZ12</td><td>RXB81</td><td>TXB81</td><td>USART MSPIM Control and Status Register 1 B</td><td>USART 1</td></tr>
+<tr><td>0x00CA</td><td>UCSR1C</td><td>UMSEL11</td><td>UMSEL10</td><td>UPM11</td><td>UPM10</td><td>USBS1</td><td>UCSZ11</td><td>UCSZ10</td><td>UCPOL1</td><td>USART MSPIM Control and Status Register 1 C</td><td>USART 1</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00CC</td><td>UBRR1L</td><td colspan="8">USART1 Baud Rate Register Low Byte</td><td>USART 1</td></tr>
+<tr><td>0x00CD</td><td>UBRR1H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART1 Baud Rate Register High Byte<td>USART 1</td></td></tr>
+<tr><td>0x00CE</td><td>UDR1</td><td colspan="8">USART1 I/O Data Register</td><td>USART 1</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00D0</td><td>UCSR2A</td><td>RXC2</td><td>TXC2</td><td>UDRE2</td><td>FE2</td><td>DOR2</td><td>UPE2</td><td>U2X2</td><td>MPCM2</td><td>USART 2</td></tr>
+<tr><td>0x00D1</td><td>UCSR2B</td><td>RXCIE2</td><td>TXCIE2</td><td>UDRIE2</td><td>RXEN2</td><td>TXEN2</td><td>UCSZ22</td><td>RXB82</td><td>TXB82</td><td>USART MSPIM Control and Status Register 2 B</td><td>USART 2</td></tr>
+<tr><td>0x00D2</td><td>UCSR2C</td><td>UMSEL21</td><td>UMSEL20</td><td>UPM21</td><td>UPM20</td><td>USBS2</td><td>UCSZ21</td><td>UCSZ20</td><td>UCPOL2</td><td>USART MSPIM Control and Status Register 2 C</td><td>USART 2</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x00D4</td><td>UBRR2L</td><td colspan="8">USART2 Baud Rate Register Low Byte</td><td>USART 2</td></tr>
+<tr><td>0x00D5</td><td>UBRR2H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART2 Baud Rate Register High Byte</td><td>USART 2</td></tr>
+<tr><td>0x00D6</td><td>UDR2</td><td colspan="8">USART2 I/O Data Register</td><td>USART 2</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0100</td><td>PINH</td><td>PINH7</td><td>PINH6</td><td>PINH5</td><td>PINH4</td><td>PINH3</td><td>PINH2</td><td>PINH1</td><td>PINH0</td><td>Port H</td></tr>
+<tr><td>0x0101</td><td>DDRH</td><td>DDH7</td><td>DDH6</td><td>DDH5</td><td>DDH4</td><td>DDH3</td><td>DDH2</td><td>DDH1</td><td>DDH0</td><td>Port H</td></tr>
+<tr><td>0x0102</td><td>PORTH</td><td>PORTH7</td><td>PORTH6</td><td>PORTH5</td><td>PORTH4</td><td>PORTH3</td><td>PORTH2</td><td>PORTH1</td><td>PORTH0</td><td>Port H</td></tr>
+<tr><td>0x0103</td><td>PINJ</td><td>PINJ7</td><td>PINJ6</td><td>PINJ5</td><td>PINJ4</td><td>PINJ3</td><td>PINJ2</td><td>PINJ1</td><td>PINJ0</td><td>Port J</td></tr>
+<tr><td>0x0104</td><td>DDRJ</td><td>DDJ7</td><td>DDJ6</td><td>DDJ5</td><td>DDJ4</td><td>DDJ3</td><td>DDJ2</td><td>DDJ1</td><td>DDJ0</td><td>Port J</td></tr>
+<tr><td>0x0105</td><td>PORTJ</td><td>PORTJ7</td><td>PORTJ6</td><td>PORTJ5</td><td>PORTJ4</td><td>PORTJ3</td><td>PORTJ2</td><td>PORTJ1</td><td>PORTJ0</td><td>Port J</td></tr>
+<tr><td>0x0106</td><td>PINK</td><td>PINK7</td><td>PINK6</td><td>PINK5</td><td>PINK4</td><td>PINK3</td><td>PINK2</td><td>PINK1</td><td>PINK0</td><td>Port K</td></tr>
+<tr><td>0x0107</td><td>DDRK</td><td>DDK7</td><td>DDK6</td><td>DDK5</td><td>DDK4</td><td>DDK3</td><td>DDK2</td><td>DDK1</td><td>DDK0</td><td>Port K</td></tr>
+<tr><td>0x0108</td><td>PORTK</td><td>PORTK7</td><td>PORTK6</td><td>PORTK5</td><td>PORTK4</td><td>PORTK3</td><td>PORTK2</td><td>PORTK1</td><td>PORTK0</td><td>Port K</td></tr>
+<tr><td>0x0109</td><td>PINL</td><td>PINL7</td><td>PINL6</td><td>PINL5</td><td>PINL4</td><td>PINL3</td><td>PINL2</td><td>PINL1</td><td>PINL0</td><td>Port L</td></tr>
+<tr><td>0x010A</td><td>DDRL</td><td>DDL7</td><td>DDL6</td><td>DDL5</td><td>DDL4</td><td>DDL3</td><td>DDL2</td><td>DDL1</td><td>DDL0</td><td>Port L</td></tr>
+<tr><td>0x010B</td><td>PORTL</td><td>PORTL7</td><td>PORTL6</td><td>PORTL5</td><td>PORTL4</td><td>PORTL3</td><td>PORTL2</td><td>PORTL1</td><td>PORTL0</td><td>Port L</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0120</td><td>TCCR5A</td><td>COM5A1</td><td>COM5A0</td><td>COM5B1</td><td>COM5B0</td><td>COM5C1</td><td>COM5C0</td><td>WGM51</td><td>WGM50</td><td>T/C 5</td></tr>
+<tr><td>0x0121</td><td>TCCR5B</td><td>ICNC5</td><td>ICES5</td><td>-</td><td>WGM53</td><td>WGM52</td><td>CS52</td><td>CS51</td><td>CS50</td><td>T/C 5</td></tr>
+<tr><td>0x0122</td><td>TCCR5C</td><td>FOC5A</td><td>FOC5B</td><td>FOC5C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>T/C 5</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0124</td><td>TCNT5L</td><td colspan = "8">Timer/Counter5 - Counter Register Low Byte</td><td>T/C 5</td></tr>
+<tr><td>0x0125</td><td>TCNT5H</td><td colspan = "8">Timer/Counter5 - Counter Register High Byte</td><td>T/C 5</td></tr>
+<tr><td>0x0126</td><td>ICR5L</td><td colspan = "8">Timer/Counter5 - Input Capture Register Low Byte</td><td>T/C 5</td></tr>
+<tr><td>0x0127</td><td>ICR5H</td><td colspan = "8">Timer/Counter5 - Input Capture Register High Byte</td><td>T/C 5</td></tr>
+<tr><td>0x0128</td><td>OCR5AL</td><td colspan = "8">Timer/Counter5 - Output Compare Register A Low Byte</td><td>T/C 5</td></tr>
+<tr><td>0x0129</td><td>OCR5AH</td><td colspan = "8">Timer/Counter5 - Output Compare Register A High Byte</td><td>T/C 5</td></tr>
+<tr><td>0x012A</td><td>OCR5BL</td><td colspan = "8">Timer/Counter5 - Output Compare Register B Low Byte</td><td>T/C 5</td></tr>
+<tr><td>0x012B</td><td>OCR5BH</td><td colspan = "8">Timer/Counter5 - Output Compare Register B High Byte</td><td>T/C 5</td></tr>
+<tr><td>0x012C</td><td>OCR5CL</td><td colspan = "8">Timer/Counter5 - Output Compare Register C Low Byte</td><td>T/C 5</td></tr>
+<tr><td>0x012D</td><td>OCR5CH</td><td colspan = "8">Timer/Counter5 - Output Compare Register C High Byte</td><td>T/C 5</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0130</td><td>UCSR3A</td><td>RXC3</td><td>TXC3</td><td>UDRE3</td><td>FE3</td><td>DOR3</td><td>UPE3</td><td>U2X3</td><td>MPCM3</td><td>USART 3</td></tr>
+<tr><td>0x0131</td><td>UCSR3B</td><td>RXCIE3</td><td>TXCIE3</td><td>UDRIE3</td><td>RXEN3</td><td>TXEN3</td><td>UCSZ32</td><td>RXB83</td><td>TXB83</td><td>USART MSPIM Control and Status Register 3 B</td><td>USART 3</td></tr>
+<tr><td>0x0132</td><td>UCSR3C</td><td>UMSEL31</td><td>UMSEL30</td><td>UPM31</td><td>UPM30</td><td>USBS3</td><td>UCSZ31</td><td>UCSZ30</td><td>UCPOL3</td><td>USART MSPIM Control and Status Register 3 C</td><td>USART 3</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x0134</td><td>UBRR3L</td><td colspan="8">USART3 Baud Rate Register Low Byte</td><td>USART 3</td></tr>
+<tr><td>0x0135</td><td>UBRR3H</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="4">USART3 Baud Rate Register High Byte</td><td>USART 3</td></tr>
+<tr><td>0x0136</td><td>UDR3</td><td colspan="8">USART3 I/O Data Register</td><td>USART 3</td></tr>
+<tr><td>......</td><td>Reserved</td><td colspan ="10"></td></tr>
+<tr><td>0x01FF</td><td>Reserved</td><td colspan ="10"></td></tr>
 </tbody>
 <table>
 
